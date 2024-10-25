@@ -16,7 +16,7 @@ async function bootstrap() {
   .setDescription('use the base api url as https://localhost:3000')
   .setTermsOfService('https://localhost:3000/terms-of-service')
   .setLicense('MIT licence' , 'https://github.com/ramkaf/nest.git') 
-  .addServer('https://localhost:3000')
+  .addServer('http://localhost:3000')
   .setVersion('1.0').build()
   const document = SwaggerModule.createDocument(app,config)
   SwaggerModule.setup('api' , app , document)
